@@ -1,0 +1,204 @@
+    @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+
+    body {
+        height: 100vh;
+        width: 100%;
+        /*Adding the screen sizes*/
+
+
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        /*Background*/
+
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        /*Setting the display structure and allignment*/
+
+        margin: 0;
+        overflow: hidden; 
+        /*Disables the user from scrolling and removes the white margin border*/
+    }
+
+
+    h1 {
+        color: white;
+        /*Setting the text color)*/
+
+
+        font-size: 32px;
+        font-weight: 700;
+        font-family: 'Quicksand', sans-serif;
+        /*Setting the font properties (size, weight, font style, etc)*/
+
+
+        margin-bottom: 30px;
+        /*Text margin*/
+    }
+
+
+
+
+
+
+    .Login-Box {
+        width: 60%;
+        max-width: 750px;
+        /*Setting the size of the box*/
+
+
+        background-color: rgb(243,146,35);
+        /*Box color*/
+
+        padding: 40px 50px;
+        /*Padding for the box*/
+
+
+        border-radius: 20px;
+        /*Rounded corners for login box*/
+    }
+
+
+
+
+
+    .Login-Box h2 {
+        color: white;
+        /*Setting the text color*/
+
+
+        font-size: 26px;
+        font-weight: bold;
+        font-family: 'Quicksand', sans-serif;
+        /*Setting the font properties*/
+    }
+
+
+
+
+
+
+    .Login-Box label {
+        display: block;
+        /*Setting the display style for the text*/
+
+        color: white;
+        /*Setting the text color*/
+
+
+
+        font-size: 16px;
+        font-family: 'Quicksand', sans-serif;
+        /*Setting the font properties*/
+    }
+
+
+
+
+
+
+    .Login-Box input {
+        width: 100%;
+        /*Setting the size for the login input field*/
+
+
+        padding: 17px;
+        /*Setting how tall the login field input will be*/
+
+        
+        border: none;
+        outline: none;
+        /*Quality of life improvements, removes the borders to give a better look*/
+
+
+        border-radius: 12px;
+        /*Gives the Rounded border*/
+
+
+        margin-bottom: 25px;
+        /*Gives the margin between elements*/
+
+
+        font-size: 16px;
+    }
+
+
+
+
+
+
+
+
+    .Login-Button {
+        margin-left: auto;
+        display: block;
+        /*Setting the display style for the button and placement right*/
+
+
+        width: 140px;
+        padding: 12px 0;
+        /*Setting the size and height of the login button*/
+
+
+
+        background-color: rgb(101,138,181); 
+        color: white;
+        /*Color of the button and the text*/
+
+
+
+        font-size: 18px;
+        /*Font properties*/
+
+
+        border: none;
+        cursor: pointer;
+        /*Quality of life, removing buttin border and changing mouse cursor to pointer*/
+
+
+        border-radius: 12px;
+        /*Rounded borders*/
+    }
+
+
+
+    .Login-Button:hover {
+        opacity: 0.9;
+        /*Added a bit of transparency when user hovers over the button */
+    }
+
+
+
+
+    
+body::before {
+    content: '';
+    /*Creating the overlay layer*/
+
+
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    /*Make the element fill the entire screen*/
+
+
+    background-image:
+        linear-gradient(rgba(0, 102, 148, 0.5)),
+        url("../Assets/CampusBG.jpg");
+    /*Add a BG image and as well as a gradient on the top*/
+    
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /*BG Properties*/
+
+    z-index: -1;
+    /* places the bg image behind every other element*/
+}

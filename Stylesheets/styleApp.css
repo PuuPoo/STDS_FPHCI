@@ -16,8 +16,8 @@ body{
 
 body::before{
     content: '';
-    position: absolute;
 
+    position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
@@ -114,5 +114,3 @@ a { /* remove hyperlink underline */
     padding: 0;
     border: none;
 }
-
-

@@ -3,71 +3,108 @@
 body{
     margin: 0;
     padding: 0;
+    /*Removes the white bordering of elements */
 }
 
 .student-home {
     min-height: 100vh;
     background-color: rgb(255,255,255);
     
-    /* Example: Change the layout from centered to standard document flow */
+    /*Changes the display layout to block*/
     display: block; 
 }
 
 
-/*removing the bullet, margins, and padding from the ul element */
-ul {
-    list-style-type: none;
+
+/*Editting only the ul element of navbar class*/
+.navbar-ul {
     margin: 0;
     padding: 0;
-    overflow: hidden;
+    /*Removes the white bordering of elements */
+
+    list-style-type: none;
+    /*Removes list elements from listing top to down*/
+
+
     background-color: rgb(1,151,218);
 
     display: flex;
-    align-items: center; 
+    /*Changes the display layout to flex*/
+
 }
 
-a { /* remove hyperlink underline */
+
+
+a { 
     text-decoration: none; 
+    /* remove hyperlink underline */
 }
+
+
+
 
 .nav-brand{
     color: white;
     font-family: 'Quicksand', sans-serif;
     font-weight: bold;
     font-size: 30px;
+    /*Text color and font styling*/
 
     padding: 14px 16px;
+    /*Padding away from the top and side of the screen*/
 }
+
+
 
 .nav-link{
     display: flex;
+    /*Make display flex, to put elements to the side instead of below*/
+
+
+
     margin-left: auto;
+    /*Make elements shift to the right*/
 }
+
 
 
 .active-link a{
     background-color: rgb(243,146,35);
+    /*Make the active element have a different color*/
+
+
     border-radius: 10px;
+    /*Rounded border of the element*/
 }
 
 
 ul li a {
     display: block;
-    color: white;
-    text-align: center;
+    /*Changes the display layout to block*/
+
+
     padding: 14px 16px;
+    /*Padding away from the top and side of the screen*/
+
+    color: white;
     font-family: 'Quicksand', sans-serif;
     font-weight: bold;
     font-size: 30px;
+    /*Text color and font styling*/
 
     transition: background-color 0.2s ease; 
+    /*Add some time delay before the background fully changes color*/
 }
+
 
 
 ul li a:hover {
     background-color: rgb(243,146,34);
+    /*Make the hover element have a different color*/
+
 
     border-radius: 10px;
+    /*Rounded border*/
 }
 
 
@@ -82,79 +119,134 @@ ul li a:hover {
 /* Student Home boxes -------------------------*/
 
 
-
-
 /*Boxes layout side by side */
 .dashboard-container {
+
     /* A 2-column grid layout */
     display: grid;
-    grid-template-columns: 1fr 1fr; /* tells it to split it into 2 equal fractions */
+    grid-template-columns: 1fr 1fr;
+    /* tells it to split it into 2 equal fractions */
 
 
-    grid-gap: 20px; 
+    grid-gap: 20px; /*Gap between the boxes */
     max-width: 1400px; /* setting the size of the boxes */
     margin: 0 auto; /* Centers the container horizontally */
+
+
     padding-top: 20px;
+    /*Gap between the element to the top */
 }
+
+
 
 
 /*The box styles*/
 .card {
     background-color: rgb(217,217,217);
+    /*Box color*/
+
     border-radius: 10px;
+    /*Rounded border for the box*/
+
+
     padding: 20px;
+    /*How much padding is for the box and its elements inside*/
+
+
     font-family: 'Quicksand', sans-serif;
+    /*Text family*/
 }
 
 
 /*Profile Information */
 .profile-info {
     display: flex; 
-    align-items: flex-start; 
+    /*Setting the display to flex*/
+    
     gap: 20px;
+    /*The gap between the pfp and the text elements on the right*/
 }
+
+
+
+
 
 /* Profile icon */
 .profile-header {
     /* Style for the container holding the user icon */
     background-color: rgb(217,217,217); 
+
     border-radius: 50%;
     width: 80px;
     height: 80px;
+    /*Makes the container a circle and sizing*/
 
     /*center the icon inside the circle */
     display: flex;
     justify-content: center;
     align-items: center;
     
-
-    border: 3px solid #333;
     padding: 10px;
+    /*Adds space inbetween elements*/
 }
+
+
 
 .profile-header img {
     width: 160%; 
     height: 160%;
+    /*Size of the image*/
+
     object-fit: cover;
-    border-radius: 50%; 
+    border-radius: 50%;
+    /*Setting the object to fit the container and make it a circle*/
 }
 
 
 
+
+/* For the paragraphs inside the cards */
 .profile-details p, .stats-section p, .goals-section p, .recommended-action p{
     margin: 5px;
+    /* Margin between each element */
+
     font-size: 30px;
     font-weight: 500;
     color: black;
     font-family: 'Quicksand', sans-serif;
     text-align: left;
-
+    /* Text styling and font */
 }
+
+
 
 /* Style the headings in the cards */
 .card h2 {
     font-size: 35px;
     font-weight: bold;
+    /*Font styling */
+
     margin-top: 0;
     margin-bottom: 15px;
+    /*Adds the margin pixel gap*/
 }
+
+
+.todo-bullets li {
+    font-size: 24px;
+    margin-bottom: 6px;
+    font-family: 'Quicksand', sans-serif;
+    color: black;
+    /*Font styling and setting and gap between*/
+}
+
+
+.goals-section h2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /*Makes the displlay flex and adds space between elements*/
+}
+
+
+

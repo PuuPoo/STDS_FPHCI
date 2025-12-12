@@ -14,7 +14,12 @@ body{
     margin: 0;
 }
 
+
+
+
+
 body::before{
+
     content: '';
 
     position: absolute;
@@ -91,9 +96,18 @@ button {
 
 }
 
-a { /* remove hyperlink underline */
+
+
+
+a { 
     text-decoration: none; 
+    /* remove hyperlink underline */
 }
+
+
+
+
+
 
 /*custom properties for buttons in login2*/
 .login-buttons  {
@@ -104,6 +118,10 @@ a { /* remove hyperlink underline */
     gap: 120px;
 
 }
+
+
+
+
 
 /*custom properties for buttons in login2*/
 .login-student button img,

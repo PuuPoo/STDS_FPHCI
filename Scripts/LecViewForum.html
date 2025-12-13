@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lecturer View Forum</title>
     <link rel="stylesheet" href="../Stylesheets/LecViewForum.css">
+    <script src="../Javascript/LecViewForum.js"></script>
 </head>
 <body>
     <div class="navbar">
@@ -13,7 +14,7 @@
         <div class="nav_right">
 
             <div class="nav_items">
-                <button class="student_button" onclick="location.href='LecturerStudents.html'"> <p>Students</p> </button>
+                <button class="student_button"> <p>Students</p> </button>
                 <button class="forum_button" onclick="location.href='LecViewForum.html'"> <p>Forums</p> </button>
             </div>
             
@@ -30,119 +31,13 @@
         <div class="subject_text_space">
             <a href="#" class=" subject_text">Class Forum</a>
 
-            <button class="class_add_forum"> <p>Add Opinion</p> </button>
+            <button class="class_add_forum" onclick="location.href='LecSendForum.html'"> <p>Add Opinion</p> </button>
         </div>
 
-        <div class="forums">
-
-            <div class="forum_left">
-
-                <div class="lec_profile">
-
-                    <div class="lec_pic">
-                        <img src="../Assets/Icon.png" alt="profile-details" class="lecturer_img">
-                    </div>
-
-                    <div class="Lec_info">
-                        <p class="lec_name">Lecturer Name</p>
-                        <p class="lec_subject">Lecturer Subject</p>
-                    </div>
-
-                </div>
-
-                <p class="forum_content">
-                    content here
-                </p>
-            </div>
-
-            <button>
-                <img src="../Assets/flags.png" alt="flag indicator" class="flag_icon">                
-            </button>
-        </div>
-
-        <div class="forums">
-
-            <div class="forum_left">
-
-                <div class="lec_profile">
-
-                    <div class="lec_pic">
-                        <img src="../Assets/Icon.png" alt="profile-details" class="lecturer_img">
-                    </div>
-
-                    <div class="Lec_info">
-                        <p class="lec_name">Lecturer Name</p>
-                        <p class="lec_subject">Lecturer Subject</p>
-                    </div>
-
-                </div>
-
-                <p class="forum_content">
-                    content here
-                </p>
-            </div>
-
-            <button>
-                <img src="../Assets/flags.png" alt="flag indicator" class="flag_icon">                
-            </button>
-        </div>
-
-
-        <div class="forums">
-
-            <div class="forum_left">
-
-                <div class="lec_profile">
-
-                    <div class="lec_pic">
-                        <img src="../Assets/Icon.png" alt="profile-details" class="lecturer_img">
-                    </div>
-
-                    <div class="Lec_info">
-                        <p class="lec_name">Lecturer Name</p>
-                        <p class="lec_subject">Lecturer Subject</p>
-                    </div>
-
-                </div>
-
-                <p class="forum_content">
-                    content here
-                </p>
-            </div>
-
-            <button>
-                <img src="../Assets/flags.png" alt="flag indicator" class="flag_icon">                
-            </button>
-        </div>
-
-
-        <div class="forums">
-
-            <div class="forum_left">
-
-                <div class="lec_profile">
-
-                    <div class="lec_pic">
-                        <img src="../Assets/Icon.png" alt="profile-details" class="lecturer_img">
-                    </div>
-
-                    <div class="Lec_info">
-                        <p class="lec_name">Lecturer Name</p>
-                        <p class="lec_subject">Lecturer Subject</p>
-                    </div>
-
-                </div>
-
-                <p class="forum_content">
-                    content here
-                </p>
-            </div>
-
-            <button>
-                <img src="../Assets/flags.png" alt="flag indicator" class="flag_icon">                
-            </button>
+        <div id="forumContainer">
         </div>
     </div>
+
 
 </body>
 </html>

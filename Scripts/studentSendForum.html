@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../Stylesheets/LecSendForum.css">
+    <script src="../Javascript/studentSendForum.js"></script>
+</head>
+
+
+<body>
+    <div class="navbar">
+        <h1 class="main_title">Student-teacher data System</h1>
+
+        <div class="nav_right">
+
+            <div class="nav_items">
+                <button class="student_button" onclick="location.href='LecturerStudents.html'"> <p>Students</p> </button>
+                <button class="forum_button" onclick="location.href='LecViewForum.html'"> <p>Forums</p> </button>
+            </div>
+            
+            <div class="prof_pic">
+                <img src="../Assets/Icon.png" alt="profile-details">
+            </div> 
+    
+        </div>
+
+    </div>
+
+    <div class="middle">
+
+        <div class="back_button", onclick = "location.href='../Scripts/LecViewForum.html'">
+            <button><img src="../Assets/back arrow.png" alt=""></button>
+        </div>
+
+        <div class="send_button">
+            <button><p>Send Opinion</p></button>
+        </div>
+
+    </div>
+
+    <div class="main_forum_container">
+
+        <div class="name_section">
+            <p>Name: </p>
+            <input type="text", placeholder="Place your recipient name" class="name_input" >
+        </div>
+
+        <div class="about_section">
+            <p>About: </p>
+            <input type="text" placeholder="Input Title" class="about_input">
+            <button id="flagButton" data-state="white">
+                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path id="flagPole" d="M8 30C8 30 10 28 16 28C22 28 26 32 32 32C38 32 40 30 40 30V6C40 6 38 8 32 8C26 8 22 4 16 4C10 4 8 6 8 6V30ZM8 30V44" stroke="#1E1E1E" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path id="flagBody" d="M9.81445 6.53613C12.9156 5.29568 17.5553 4.97922 21.1973 6.54004H21.1963L26.1807 8.53418L26.5459 8.66699C28.3987 9.30557 30.6619 9.52182 32.7402 9.48047C34.9656 9.43618 36.8949 9.09921 37.8125 8.72852L38.5 8.4502V29.2207L38.208 29.3545C34.5574 31.0234 30.4242 30.4966 28.3789 29.9854L28.3604 29.9805L28.3418 29.9746C27.9432 29.8417 27.2605 29.5484 26.4395 29.2031C25.6048 28.8521 24.5969 28.4336 23.5137 28.0312C21.3299 27.2201 18.9029 26.5 17 26.5H16.9873L16.9746 26.499C15.0215 26.4014 13.3108 26.5975 12.0889 26.8174C11.4787 26.9272 10.9916 27.0423 10.6592 27.1299C10.493 27.1737 10.365 27.2109 10.2803 27.2363C10.238 27.249 10.2061 27.2591 10.1855 27.2656C10.1754 27.2688 10.1677 27.271 10.1631 27.2725L10.1582 27.2744L9.5 27.4941V6.66113L9.81445 6.53613Z" fill="#FFFFFF" stroke="#1E1E1E"/>
+                </svg>
+            </button>
+        </div>
+
+        <div class="opinion_section">
+            <textarea class="opinion_input", placeholder="Place your input here"></textarea>
+        </div>
+
+    </div>
+
+</body>
+</html>

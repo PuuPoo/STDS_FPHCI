@@ -6,91 +6,99 @@ body{
     padding-bottom: 25px;
 }
 
-.navbar{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    background-color: rgba(0, 151, 218, 1);
-    position: fixed;    
-    width: 100%;
-    height: 75px;
-    top: 0;
-    left: 0;
-}
 
-.navbar .main_title,
-.navbar .nav_items p{
-    color: white;
-}
-
-.navbar .main_title{
-    font-family: 'Quicksand', sans-serif;
-    margin-left: 25px;
-}
-
-.nav_right{
-    margin-top: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+/*Editting only the ul element of navbar class*/
+.navbar-ul {
     margin: 0;
-    gap: 250px;
-}
+    padding: 0;
+    /*Removes the white bordering of elements */
 
-.navbar .nav_right .nav_items{
+    list-style-type: none;
+    /*Removes list elements from listing top to down*/
+
+
+    background-color: rgb(1,151,218);
+
     display: flex;
-    margin-top: 20px;
-    gap: 10px;
-    align-items: center;
+    /*Changes the display layout to flex*/
+
 }
 
-.navbar .nav_right .nav_items .forum_button{
-    border-radius: 10px 10px 0 0;
-    background-color:  rgb(243,147,35);
-    border: none;
-    margin-top: 10px;
-    cursor: pointer;
+
+
+a { 
+    text-decoration: none; 
+    /* remove hyperlink underline */
 }
 
-.navbar .nav_right .nav_items .student_button{
-    border-radius: 10px 10px 0 0;
-    background-color:  rgba(0, 151, 218, 1);
-    border: none;
-    margin-top: 10px;
-    cursor: pointer;
+
+
+
+.nav-brand{
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    /*Text color and font styling*/
+
+    padding: 14px 16px;
+    /*Padding away from the top and side of the screen*/
 }
 
-.navbar .nav_right .nav_items button p{
-    margin-top: 15px;
-    margin-bottom: 5px;
-    font-size: 20px;
-    font-weight: 700;
-}
 
-.Lecturer_prof{
+
+.nav-link{
     display: flex;
-    align-items: center;
+    /*Make display flex, to put elements to the side instead of below*/
+
+
+
+    margin-left: auto;
+    /*Make elements shift to the right*/
 }
 
-.prof_pic {
-    width: 65px;
-    height: 65px;
-    display: flex;
-    overflow: hidden;
-    align-items: center;
-    justify-content: center;
-    border-radius: 100%;
-    margin-right: 30px;
+
+
+.active-link a{
+    background-color: rgb(243,146,35);
+    /*Make the active element have a different color*/
+
+
+    border-radius: 10px;
+    /*Rounded border of the element*/
 }
 
-.prof_pic img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transform: scale(1.2);
-    background-color: darkgray;
+
+ul li a {
+    display: block;
+    /*Changes the display layout to block*/
+
+
+    padding: 14px 16px;
+    /*Padding away from the top and side of the screen*/
+
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    /*Text color and font styling*/
+
+    transition: background-color 0.2s ease; 
+    /*Add some time delay before the background fully changes color*/
 }
+
+
+
+ul li a:hover {
+    background-color: rgb(243,146,34);
+    /*Make the hover element have a different color*/
+
+
+    border-radius: 10px;
+    /*Rounded border*/
+}
+
+
 
 
 
@@ -236,7 +244,7 @@ body{
 
 
 .main_content{
-    padding-top: 80px;
+    padding-top: 10px;
 }
 
 .main_content .subject_text_space{

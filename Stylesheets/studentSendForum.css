@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+body{
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;
+    padding-bottom: 25px;
+}
+
+
+/*Editting only the ul element of navbar class*/
+.navbar-ul {
+    margin: 0;
+    padding: 0;
+    /*Removes the white bordering of elements */
+
+    list-style-type: none;
+    /*Removes list elements from listing top to down*/
+
+
+    background-color: rgb(1,151,218);
+
+    display: flex;
+    /*Changes the display layout to flex*/
+
+}
+
+
+
+a { 
+    text-decoration: none; 
+    /* remove hyperlink underline */
+}
+
+
+
+
+.nav-brand{
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    /*Text color and font styling*/
+
+    padding: 14px 16px;
+    /*Padding away from the top and side of the screen*/
+}
+
+
+
+.nav-link{
+    display: flex;
+    /*Make display flex, to put elements to the side instead of below*/
+
+
+
+    margin-left: auto;
+    /*Make elements shift to the right*/
+}
+
+
+
+.active-link a{
+    background-color: rgb(243,146,35);
+    /*Make the active element have a different color*/
+
+
+    border-radius: 10px;
+    /*Rounded border of the element*/
+}
+
+
+ul li a {
+    display: block;
+    /*Changes the display layout to block*/
+
+
+    padding: 14px 16px;
+    /*Padding away from the top and side of the screen*/
+
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    /*Text color and font styling*/
+
+    transition: background-color 0.2s ease; 
+    /*Add some time delay before the background fully changes color*/
+}
+
+
+
+ul li a:hover {
+    background-color: rgb(243,146,34);
+    /*Make the hover element have a different color*/
+
+
+    border-radius: 10px;
+    /*Rounded border*/
+}
+
+
+
+
+.middle{
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+
+.middle .back_button button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:45px;
+    height: 45px;
+    background-color: white;
+    margin-left: 35px;
+}
+
+.middle .back_button img{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.middle .send_button button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50;
+    margin-right: 35px;
+    background-color: rgb(243,147,35);
+    border: none;
+    border-radius: 10px;
+}
+
+.middle .send_button p{
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    color: white;
+}
+
+
+
+
+
+
+
+
+.main_forum_container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.about_section, .name_section, .opinion_section{
+    border: solid;
+    border-width: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:5px;
+    width:95%
+}
+
+
+.opinion_section{
+    height: 60vh;
+}
+
+.name_section{
+    height: 45px;
+}
+
+.about_section{
+    border-top: none;
+    border-bottom: none;
+}
+
+.about_section button{
+    width: 45px;
+    height: 45px;
+    border: none;
+    background-color: white;
+    outline: none;
+}
+
+.about_section button svg{
+    width: 100%;
+    height: 100%;
+}
+
+.about_section p, .name_section p{
+    margin: 0;
+    margin-left: 15px;
+}
+
+.about_section input, .name_section input{
+    border:  none;
+    background-color: white;
+    width: 95%;
+    font-family: 'Quicksand', sans-serif;
+    font-size: medium;
+}
+
+.about_section input:focus, .name_section input:focus{
+    outline: none;
+}
+
+
+.opinion_section textarea{
+    width: 99%;
+    height: 99%;
+    border: none;
+    font-size: medium;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.opinion_section textarea:focus{
+    outline: none;
+}
+
+
+
+
+
+
+
+

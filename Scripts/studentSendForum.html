@@ -4,33 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../Stylesheets/LecSendForum.css">
+    <link rel="stylesheet" href="../Stylesheets/studentSendForum.css">
     <script src="../Javascript/studentSendForum.js"></script>
 </head>
 
 
 <body>
-    <div class="navbar">
-        <h1 class="main_title">Student-teacher data System</h1>
+    <ul class = "navbar-ul">
+        <li class="nav-brand">Student Teacher Data System</li>
 
-        <div class="nav_right">
-
-            <div class="nav_items">
-                <button class="student_button" onclick="location.href='LecturerStudents.html'"> <p>Students</p> </button>
-                <button class="forum_button" onclick="location.href='LecViewForum.html'"> <p>Forums</p> </button>
-            </div>
-            
-            <div class="prof_pic">
-                <img src="../Assets/Icon.png" alt="profile-details">
-            </div> 
-    
+        <div class = "nav-link">
+            <li><a href="StudentHome.html">Home</a></li>
+            <li><a href="StudentPerformance.html">Performance</a></li>
+            <li class ="active-link"><a href="StudentForum.html">Forum</a></li>
         </div>
-
-    </div>
+        </div>
+    </ul>
 
     <div class="middle">
 
-        <div class="back_button", onclick = "location.href='../Scripts/LecViewForum.html'">
+        <div class="back_button", onclick = "location.href='../Scripts/studentViewForum.html'">
             <button><img src="../Assets/back arrow.png" alt=""></button>
         </div>
 

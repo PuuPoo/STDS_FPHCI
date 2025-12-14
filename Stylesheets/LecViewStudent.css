@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;
+    padding-bottom: 25px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(0, 151, 218, 1);
+    position: fixed;    
+    width: 100%;
+    height: 75px;
+    top: 0;
+    left: 0;
+}
+
+.navbar .main_title,
+.navbar .nav_items p{
+    color: white;
+}
+
+.navbar .main_title{
+    font-family: 'Quicksand', sans-serif;
+    margin-left: 25px;
+}
+
+.nav_right{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    gap: 250px;
+}
+
+.navbar .nav_right .nav_items{
+    display: flex;
+    margin-top: 20px;
+    gap: 10px;
+    align-items: center;
+}
+
+.navbar .nav_right .nav_items .student_button{
+    border-radius: 10px 10px 0 0;
+    background-color:  rgb(243,147,35);
+    border: none;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.navbar .nav_right .nav_items .forum_button{
+    border-radius: 10px 10px 0 0;
+    background-color:  rgba(0, 151, 218, 1);
+    border: none;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.navbar .nav_right .nav_items button p{
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.Lecturer_prof{
+    display: flex;
+    align-items: center;
+}
+
+.prof_pic {
+    width: 65px;
+    height: 65px;
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    margin-right: 30px;
+}
+
+.prof_pic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: scale(1.2);
+    background-color: darkgray;
+}
+
+
+.main_content{
+    padding-top: 80px;
+}
+
+.profile-info {
+    display: flex;
+    flex-direction: row;
+    gap: 45px;
+    max-width: 1400px; 
+    margin-top: 10px;
+    background-color:rgb(217,217,217);
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+}
+
+
+.buttons{
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    height: 100%;
+    align-items: center;
+}
+.back_button button{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:55px;
+    height: 45px;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.back_button img{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.send_button{
+    display: flex;
+    justify-content: center;
+}
+
+.send_button button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 35px;
+    background-color: rgb(243,147,35);
+    border: none;
+    margin-left: 50px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.send_button p{
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+    color: white;
+}
+
+.flag_wrapper{
+    width: 75px;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content:  center;
+    margin-top: 10px;
+}
+
+.flag_icon{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+
+/* Profile icon */
+.profile-header {
+    background-color:none;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+}
+
+.profile_section{
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    align-items: center;
+}
+
+.profile-header img {
+    width: 100%; 
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+
+
+
+/*Boxes layout side by side */
+.dashboard-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px; 
+    max-width: 1400px; 
+    margin: 0 auto; 
+    padding-top: 20px;
+}
+
+
+
+
+/*The box styles*/
+.recommended-action,.stats-section {
+    background-color: rgb(217,217,217);
+    border-radius: 10px;
+    padding: 20px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.profile-details p, .stats-section p, .recommended-action p{
+    margin: 5px;
+    font-size: 25px;
+    font-weight: 500;
+    color: black;
+    font-family: 'Quicksand', sans-serif;
+    text-align: left;
+
+}
+
+.recommended-action h2,.stats-section h2 {
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 15px;
+
+}
+
+
+
+
+

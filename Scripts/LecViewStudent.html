@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href="../Stylesheets/LecViewStudent.css" />
+
+    <title>Student Home</title>
+</head>
+
+<body>
+
+    <div class="navbar">
+        <h1 class="main_title">Student-teacher data System</h1>
+
+        <div class="nav_right">
+
+            <div class="nav_items">
+                <button class="student_button" onclick="location.href='LecturerStudents.html'"> <p>Students</p> </button>
+                <button class="forum_button" onclick="location.href='LecViewForum.html'"> <p>Forums</p> </button>
+            </div>
+            
+            <div class="prof_pic">
+                <img src="../Assets/Icon.png" alt="profile-details">
+            </div> 
+            
+        </div>
+    </div>
+
+    <div class="main_content">
+
+        <div class="back_button", onclick = "location.href='LecturerStudents.html'">
+            <button><img src="../Assets/back arrow.png" alt=""></button>
+        </div>
+
+        <div class="profile-info">
+
+            <div class="profile_section">
+
+                <div class="profile-header">
+                    <img src="../Assets/Icon.png" alt="Placeholder Profile Icon">
+                </div>
+
+                <div class="profile-details">
+                        <p><strong>Detailed Info</strong> (Agie Winata)</p>
+                        <p><strong>NIM:</strong> 2038489837</p>
+                        <p><strong>Major:</strong> Computer Science</p>
+                    <p><strong>EMAIL:</strong> winata.agie@binus.id</p>
+                    <p><strong>Phone Number:</strong> 0869 4200 6969</p>
+                </div>  
+                
+            </div>
+
+            <div class="buttons">
+
+                <div class="flag_wrapper">
+                    <img src="../Assets/flags.png" alt="-" class="flag_icon">
+                </div>
+
+
+                <div class="send_button">
+                    <button onclick="location.href='LecViewForum.html'"><p>View Forum</p></button>
+                </div>      
+
+            </div>
+
+
+        </div>
+
+
+
+        <div class="dashboard-container">
+
+            <div class="stats-section">
+                <h2>
+                    Current Statistic:
+                </h2>
+                <p><strong>Sat:</strong> <span id = "satPoints">20</span> Points</p>
+                <p><strong>Community Service:</strong> <span id = "csHours">10</span> Hours</p>
+                <p><strong>GPA:</strong> 3.3</p>
+                <p><strong>SCU:</strong> 87 Points</p>
+            </div>
+
+            <div class="recommended-action">
+                <h2>
+                    Recommended Action:
+                </h2>
+                <p id = "Action"></p>
+            </div>
+
+        </div>
+    
+    <script src="../Javascript/studentReccommendedActions.js"></script>
+    </div>
+
+</body>
+</html>

@@ -218,10 +218,12 @@ body{
 
 .opinion_section textarea{
     width: 99%;
-    height: 99%;
+    height: 89%;
     border: none;
     font-size: medium;
     font-family: 'Quicksand', sans-serif;
+    resize: none;
+    margin-left: 10px;
 }
 
 .opinion_section textarea:focus{

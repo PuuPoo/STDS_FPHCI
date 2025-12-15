@@ -73,7 +73,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function createOpinion(data) {
         const flagColor = colors[data.flagState] || colors['white'];
-        
+            
         const card = document.createElement('div');
         card.classList.add('opinion_card');
 

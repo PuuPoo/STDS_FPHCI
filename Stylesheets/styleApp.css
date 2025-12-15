@@ -3,77 +3,108 @@
 
 body{
     min-height: 100vh;
+    /*The display size on the screen*/ 
 
-    position: relative;
 
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;    
+    align-items: center;  
+    /*Display setting, allignment, and structure*/  
 
     margin: 0;
+    /*Removes the white bordering of elements */
 }
 
 
 
 
-
+/*Does this code before the main body code*/ 
 body::before{
 
     content: '';
+    /*Need this to initialize the before and after codes*/ 
 
     position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
+    /*Ensures it maximizes the image top to bottom, left to right*/ 
 
     background-image: 
         linear-gradient(rgba(0, 102, 148, 0.5)),
         url("../Assets/CampusBG.jpg");
+    /*Adds the background image for the bg and another bg color hue as well*/ 
+
     background-position: center center;
     background-size: cover;
+    /*Bbackground covers the entire screen and places in the center*/ 
 
     z-index: -1;
+    /*Ensure it is placed behind everything else*/ 
 }
+
+
 
 .StudentNav {
     display: flex;
     flex-direction: column;
     align-items: center; 
+    /*Display setting, allignment, and structure*/
 }
+
+
 
 .StudentNav a {
     display: inline-block;
+    /*Display setting, allignment, and structure for the a element*/
 }
+
+
+
 
 h1{
     color: white;
     text-align: center;
-
+    /*Text allignment and coloring*/
 
     font-family: 'Quicksand', sans-serif;
     font-weight: bold;
     font-size: 55px;
+    /*Font family and settings*/
+
+
 
     max-width: 1400px;
+    /*Maximum size of h1 in the screen*/
 
     /*Reducing the margin gap between h1 and p*/
     margin-bottom: 0px;
 }
 
+
+
+
 p{
     color: white;
     text-align: center;
+    /*Text allignment and coloring*/
+
+
+
     font-family: 'Quicksand', sans-serif;
     font-weight: bold;
+    /*Font family and settings*/
 
     max-width: 800px;
-
-    padding: 5px;
+    /*Maximum size of p in the screen*/
+    
 
     /*Reducing the margin gap between h1 and p*/
     margin-top: 0px;
+
+
 
     /*Gap from p to button*/
     margin-bottom: 50px; 
@@ -82,18 +113,36 @@ p{
 }
 
 
+
+
+
 button {
-    display: block;        
-    padding: 20px 60px;    
+    display: block;    
+    /*Changes the display structure*/    
+
+
+    padding: 20px 60px;
+    /*Setting the size of the button*/     
+    
+
+
+    color: white;
     font-family: 'Quicksand', sans-serif;
     font-weight: bold;
+    font-size: 32px;
+    /*Text setting and color*/     
+
+
     border-radius: 20px;   
     border: none;
-    background-color: rgb(243,147,35);
-    color: white;
-    font-size: 32px;
-    cursor: pointer;
+    /*Makes the button rounded and removes its bordering*/
 
+    background-color: rgb(243,147,35);
+    /*Button color*/
+
+
+    cursor: pointer;
+    /*Changes the cursor style*/ 
 }
 
 
@@ -114,9 +163,11 @@ a {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    /*Changes the display structure and allignment*/  
+
 
     gap: 120px;
-
+    /*Gap between the buttons*/  
 }
 
 
@@ -128,7 +179,9 @@ a {
 .login-teacher button img {
     width: 300px;  
     height: 300px; 
+    /*The sizes of the buttons*/ 
         
     padding: 0;
     border: none;
+    /*Removes the padding and bordering line*/ 
 }

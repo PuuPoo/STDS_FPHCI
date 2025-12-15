@@ -49,7 +49,6 @@ document.addEventListener('DOMContentLoaded', () => {
             studentMessage: message,
         };
 
-        // ✅ FIXED: Use "[]" (string) not [] (array)
         let savedOpinion = JSON.parse(localStorage.getItem("studentOpinion") || "[]");
 
         console.log(newOpinion);

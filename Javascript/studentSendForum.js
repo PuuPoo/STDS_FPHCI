@@ -4,7 +4,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const sendbtn = document.querySelector('.send_button');
     const aboutArea = document.querySelector('.about_input');
     const nameArea = document.querySelector('.name_input');
-    const textArea = document.querySelector('.opinion_input'); // ⚠️ Fixed: was '.about_input', should be '.opinion_input'
+    const textArea = document.querySelector('.opinion_input'); 
+
 
     const states = ['white', 'green', 'red'];
     const colors = {
@@ -49,7 +50,6 @@ document.addEventListener('DOMContentLoaded', () => {
             studentMessage: message,
         };
 
-        // ✅ FIXED: Use "[]" (string) not [] (array)
         let savedOpinion = JSON.parse(localStorage.getItem("lecturerOpinion") || "[]");
 
         console.log(newOpinion);

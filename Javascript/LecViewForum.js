@@ -1,8 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
-    console.log("DOM Loaded - Script is running");
 
     const forumContainer = document.getElementById("forumContainer");
-    console.log("Forum Container:", forumContainer); // Should not be null
 
     if (!forumContainer) {
         console.error("forumContainer not found!");
@@ -70,13 +68,10 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     const allOpinion = [...initialOpinions, ...newOpinion];
-    console.log("Total opinions to display:", allOpinion.length);
 
     forumContainer.innerHTML = "";
 
     function createOpinion(data) {
-        console.log("Creating opinion for:", data.studentName);
-
         const flagColor = colors[data.flagState] || colors['white'];
         
         const card = document.createElement('div');

@@ -205,7 +205,7 @@ body{
     height: 48px;
 }
 
-/* Forum Body - Hidden by default */
+/* Forum Body */
 .forum_body {
     padding: 0 20px;
     max-height: 0;
@@ -225,7 +225,7 @@ body{
     margin-bottom: 0;
 }
 
-/* Active State - Show forum body */
+/* Active State */
 .opinion_card.active .forum_body {
     max-height: 500px;
     padding: 20px;
